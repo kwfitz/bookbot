@@ -1,11 +1,10 @@
 def main():
+    from stats import get_num_words
     #Counts the number of words in a text file
     #varibles defined
     book_path = "books/frankenstein.txt"
     text = get_book_text(book_path)
     num_words = get_num_words(text)
-
-    from stats import get_num_words
 
     #output of the program
     print(f"{num_words} words found in the document")
