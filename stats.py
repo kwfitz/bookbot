@@ -1,9 +1,16 @@
 
-
 def get_num_words(text):
     words = text.split()
     return len(words)
 
 
-
+def get_chars_dict(text):
+    chars_dict = {}
+    for char in text:
+        lowered = char.lower()
+        if lowered in chars_dict:
+            chars_dict[lowered] += 1
+        else:
+            chars_dict[lowered] = 1
+    return chars_dict
 
